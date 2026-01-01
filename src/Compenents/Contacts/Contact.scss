@@ -1,0 +1,103 @@
+.sous-conteneur-contact{
+    .titre{
+        color: #4e4caf;
+        font-weight: 700;
+    }
+    .sous-titre{
+        font-size: 35px;
+        color: black;
+        margin: 10px 0 45px 0;
+        position: relative;
+
+        &::before{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 350px;
+            bottom: -5px ;
+            left: 0;
+            background: linear-gradient(to right,transparent,#4e4caf,transparent);
+
+        }
+    }
+    .grid{
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        gap: 45px;
+        .gauche{
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                border:2px solid #4e4caf;
+                border-radius: 8px ;
+                padding: 50px;
+                width: 100%;
+
+                .nom, .email, .message{
+                    display: flex;
+                    flex-flow: column;
+                    color: black;
+
+                    input{
+                        border: 1px solid #4e4caf;
+                        padding: 10px;
+                        outline: none;
+                        border-radius: 4px;
+                    }
+                    label{
+                        margin-bottom: 5px;
+                    }
+                    textarea{
+                        border: 1px solid #4e4caf;
+                        padding: 10px;
+                        outline: none;
+
+                    }
+                }
+                button{
+                    padding: 8px 10px;
+                    font-size: 17px;
+                    outline: none;
+                    border: 2px solid #4e4caf;
+                    background-color: #4e4caf;
+                    color: white;
+                    width: 50%;
+                    cursor: pointer;
+                    margin-top:  10px;
+                    border-radius: 20px;
+                }
+            }
+        }
+        .droite{
+            .conteneur-image{
+                display: flex;
+                align-items: flex-start;
+                gap: 15px;
+                position: relative;
+                .image-un{
+                    width: 250px;
+                    height: 430px;
+                    border-radius: 150px;
+                    overflow: hidden;
+                    img{
+                         width: 700px;
+                    }
+                }
+                .image-deux{
+                        height: 200px;
+                        width: 200px;
+                        border-radius: 50%;
+                }
+                .image-trois{
+                        position: absolute;
+                        bottom: 80px;
+                        right: 100px;
+                        height: 80px;
+                        width: 80px;
+                        border-radius: 50%;
+                }
+            }
+        }
+    }
+}
