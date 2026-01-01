@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./Compenents/Navbar/Navbar";
 import Acceuil from "./Compenents/Acceuil/Acceuil";
-import Produits from "./Compenents/produits/produits";
+import Produits from "./Compenents/Produits/Produits";
 import Nosvaleurs from "./Compenents/Nosvaleurs/Nosvaleurs";
 import Contact from "./Compenents/Contacts/Contact";
-import Footer from "./Compenents/footer/footer";
+import Footer from "./Compenents/footer/Footer";
 import "./App.scss";
 
 function App() {
