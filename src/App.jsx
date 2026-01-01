@@ -1,25 +1,45 @@
-import { Routes, Route } from "react-router-dom";
-import Navbar from "./Compenents/Navbar/Navbar";
-import Acceuil from "./Compenents/Acceuil/Acceuil";
-import Produits from "./Compenents/Produits/Produits";
-import Nosvaleurs from "./Compenents/Nosvaleurs/Nosvaleurs";
-import Contact from "./Compenents/Contacts/Contact";
-import Footer from "./Compenents/footer/Footer";
-import "./App.scss";
+import "./App.scss"
+import Acceuil from "./Compenents/Acceuil/Acceuil"
+import Navbar from "./Compenents/Navbar/Navbar"
+import Nosvaleurs from "./Compenents/Nosvaleurs/Nosvaleurs"
+import Produits from "./Compenents/Produits/Produits"
+import Contact from "./Compenents/Contacts/Contact" 
+import Footer from "./Compenents/footer/Footer"
 
 function App() {
+  
   return (
-    <div className="App">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Acceuil />} />
-        <Route path="/produits" element={<Produits />} />
-        <Route path="/valeurs" element={<Nosvaleurs />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
-    </div>
-  );
+    <>
+      <div className="App">
+        <section className="conteneur-acceuil">
+          <div className="acceuil">
+            <Navbar/>
+            <Acceuil/>
+          </div>
+        </section>
+        <section className="conteneur-produits">
+          <div className="produits">
+            <Produits/>
+          </div>
+        </section>
+        <section className="conteneur-valeurs">
+          <div className="nos-valeurs">
+             <Nosvaleurs/>
+          </div>
+        </section>
+        <section className="conteneur-contact">
+          <div className="contact">
+            <Contact/>
+          </div>
+        </section>
+        <section className="conteneur-footer">
+          <div className="footer">
+            <Footer/>
+          </div>
+        </section>
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App
